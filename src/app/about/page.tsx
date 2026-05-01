@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import AnimateOnScroll from "@/components/AnimateOnScroll";
+
 export const metadata: Metadata = {
   title: "About Neurix Data Solutions — Our Story & Mission",
   description:
@@ -98,6 +100,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Value 1 */}
+            <AnimateOnScroll delay={0}>
             <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
@@ -123,8 +126,10 @@ export default function AboutPage() {
                 that generic consultants simply can&apos;t.
               </p>
             </div>
+            </AnimateOnScroll>
 
             {/* Value 2 */}
+            <AnimateOnScroll delay={100}>
             <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
@@ -148,8 +153,10 @@ export default function AboutPage() {
                 can stop babysitting data and start acting on it.
               </p>
             </div>
+            </AnimateOnScroll>
 
             {/* Value 3 */}
+            <AnimateOnScroll delay={200}>
             <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
@@ -176,8 +183,10 @@ export default function AboutPage() {
                 problems than it solves.
               </p>
             </div>
+            </AnimateOnScroll>
 
             {/* Value 4 */}
+            <AnimateOnScroll delay={300}>
             <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
@@ -201,6 +210,7 @@ export default function AboutPage() {
                 outgrow the systems we build together.
               </p>
             </div>
+            </AnimateOnScroll>
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export const metadata: Metadata = {
   title: "Neurix Data Solutions — Automation for Power BI, Alteryx & SQL",
@@ -50,6 +51,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card 1: Power BI */}
+            <AnimateOnScroll delay={0}>
             <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
@@ -93,8 +95,10 @@ export default function Home() {
                 </svg>
               </Link>
             </div>
+            </AnimateOnScroll>
 
             {/* Card 2: Alteryx */}
+            <AnimateOnScroll delay={100}>
             <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
@@ -137,8 +141,10 @@ export default function Home() {
                 </svg>
               </Link>
             </div>
+            </AnimateOnScroll>
 
             {/* Card 3: SQL Server */}
+            <AnimateOnScroll delay={200}>
             <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
@@ -179,8 +185,10 @@ export default function Home() {
                 </svg>
               </Link>
             </div>
+            </AnimateOnScroll>
 
             {/* Card 4: Oracle SQL */}
+            <AnimateOnScroll delay={300}>
             <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
@@ -224,6 +232,7 @@ export default function Home() {
                 </svg>
               </Link>
             </div>
+            </AnimateOnScroll>
           </div>
         </div>
       </section>
@@ -240,6 +249,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Value 1 */}
+            <AnimateOnScroll delay={0}>
             <div className="text-center">
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
@@ -262,8 +272,10 @@ export default function Home() {
                 Years of hands-on experience across Power BI, Alteryx, SQL Server, and Oracle ecosystems — we know the tools inside and out.
               </p>
             </div>
+            </AnimateOnScroll>
 
             {/* Value 2 */}
+            <AnimateOnScroll delay={100}>
             <div className="text-center">
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
@@ -285,7 +297,9 @@ export default function Home() {
               </p>
             </div>
 
+            </AnimateOnScroll>
             {/* Value 3 */}
+            <AnimateOnScroll delay={200}>
             <div className="text-center">
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
@@ -309,6 +323,7 @@ export default function Home() {
                 Your goals are our goals. We collaborate closely to ensure every deliverable drives measurable business value.
               </p>
             </div>
+            </AnimateOnScroll>
           </div>
         </div>
       </section>

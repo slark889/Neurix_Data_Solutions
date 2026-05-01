@@ -16,6 +16,9 @@ const robotoSlab = Roboto_Slab({
 export const metadata: Metadata = {
   title: "Neurix Data Solutions",
   description: "Automation methods for Power BI, Alteryx, SQL Server, and Oracle SQL",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
