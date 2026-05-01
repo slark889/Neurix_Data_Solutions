@@ -48,32 +48,43 @@ Full analysis in `workspace/workspace/tech_researcher/findings.md`
 - All 7 routes render as static content, `npm run build` succeeds ✅
 - **Known issues**: 4 lint errors (`<a>` instead of `<Link>`) — to be fixed in M2.5
 
-### M2.5: Polish & AI-Generated Visual Assets (NEXT)
-- Fix all lint errors (4 `<a>` → `<Link>` replacements in contact, privacy, services, terms)
-- Generate hero/background images using minimax API
-- Generate service/icon images using minimax API
-- Integrate all visual assets into site pages
-- Ensure `npm run build` succeeds and `npm run lint` passes with zero errors
+### M2.5: Polish & AI-Generated Visual Assets
+#### M2.5.1: Lint Fixes ✅ COMPLETE
+- Fix all lint errors (`<a>` → `<Link>` replacements across all pages + Footer) ✅
+- Enable `no-html-link-for-pages` eslint rule (custom implementation) ✅
+- `npm run lint` passes with zero errors ✅
+- `npm run build` succeeds ✅
+- **Verified by Apollo**: Diana confirmed all `<a>` → `<Link>`, Vera confirmed build/lint pass
 
-### M3: Testing & Final Polish
-- Cross-browser testing
-- Mobile responsiveness verification
-- Performance optimization
-- Final bug fixes
+#### M2.5.2: AI-Generated Visual Assets ⛔ BLOCKED
+- Generate hero/background images using minimax API ⛔ No API key
+- Generate service/icon images using minimax API ⛔ No API key
+- Integrate all visual assets into site pages ⛔ Depends on API key
+- **Escalated to human**: GitHub Issue #2 — "HUMAN: minimax API key unavailable"
+- **Cannot proceed** without minimax API key from human
+
+### M3: Testing & Final Polish (NEXT)
+- Cross-browser rendering verification
+- Mobile responsiveness testing (all breakpoints)
+- Performance audit (Lighthouse / Core Web Vitals)
+- Accessibility audit
+- Content review and final bug fixes
+- Clean up uncommitted changes and stale branches
 
 ---
 
 ## Progress Log
 - **M1**: ✅ COMPLETE — Verified by Apollo. All components, config, CSS, fonts, build passing.
-- **M2**: ✅ COMPLETE — All 6 core pages + Terms created. Build passes. 4 minor lint issues remain.
-- **M2.5**: Next milestone — fix lint errors + generate/integrate minimax images
-- **M3**: Not started
+- **M2**: ✅ COMPLETE — All 6 core pages + Terms created. Build passes.
+- **M2.5.1 (Lint Fixes)**: ✅ COMPLETE — All `<a>` → `<Link>`, custom eslint rule enabled, lint 0 errors, build passes. Verified by Apollo.
+- **M2.5.2 (Images)**: ⛔ BLOCKED — Awaiting minimax API key from human (GitHub Issue #2).
+- **M3**: Next milestone — testing, polish, accessibility, cleanup.
 
 ---
 
 ## Current Status
 - **Phase**: PLANNING (Athena)
-- **Cycle**: 133
+- **Cycle**: ~144
 - **Node.js**: v24.14.1 | **npm**: 11.11.0 | **Next.js**: 16.2.4
 - **Research**: Complete — dsadata.com.au fully analyzed
-- **Ready for**: M2.5 handoff to Ares
+- **Ready for**: M3 handoff to Ares (while M2.5.2 awaits human response)
