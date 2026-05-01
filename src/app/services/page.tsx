@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Services — Power BI, Alteryx, SQL Server & Oracle Automation",
@@ -132,6 +133,8 @@ export default function ServicesPage() {
       {/* ── Hero Section ── */}
       <section className="bg-color-dark py-20 px-6">
         <div className="mx-auto max-w-3xl text-center">
+          {/* Accent Bar */}
+          <div className="mx-auto mb-6 h-2 w-[130px] bg-[#4bc9e8]" />
           <h1 className="mb-4 font-serif text-3xl sm:text-4xl font-semibold text-white">
             Our Services
           </h1>
@@ -143,6 +146,9 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* ── Breadcrumbs ── */}
+      <Breadcrumbs pageName="Services" />
+
       {/* ── Services Detail Section ── */}
       <section className="bg-white py-20 px-6">
         <div className="mx-auto max-w-6xl">
@@ -150,7 +156,7 @@ export default function ServicesPage() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="group rounded-xl border border-color-body/15 bg-color-bg p-8 transition-all hover:border-color-primary/40 hover:shadow-lg"
+                className="group rounded-xl border border-color-body/15 bg-color-bg p-8 transition-all hover:border-color-primary/40 hover:shadow-lg hover:-translate-y-1"
               >
                 {/* Icon */}
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-lg bg-color-primary/10 text-color-primary">

@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import BackToTop from "./BackToTop";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -13,6 +14,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Header />
       <main id="main-content" className="flex-1">{children}</main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }

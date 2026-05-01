@@ -21,3 +21,18 @@ body {
   color: var(--color-body);
   font-family: var(--font-montserrat), sans-serif;
 }
+
+/* ── Button hover scale + shadow ── */
+@layer base {
+  button:not(:disabled),
+  a[class*="rounded-full"] {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, transform, box-shadow;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+  }
+  button:not(:disabled):hover,
+  a[class*="rounded-full"]:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}

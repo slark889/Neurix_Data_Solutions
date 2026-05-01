@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "About Neurix Data Solutions — Our Story & Mission",
@@ -13,6 +14,8 @@ export default function AboutPage() {
       {/* ── Hero Section ── */}
       <section className="bg-color-dark py-20 px-6">
         <div className="mx-auto max-w-3xl text-center">
+          {/* Accent Bar */}
+          <div className="mx-auto mb-6 h-2 w-[130px] bg-[#4bc9e8]" />
           <h1 className="mb-4 font-serif text-3xl sm:text-4xl font-semibold text-white">
             About Neurix
           </h1>
@@ -23,6 +26,9 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+
+      {/* ── Breadcrumbs ── */}
+      <Breadcrumbs pageName="About" />
 
       {/* ── Mission / Company Story Section ── */}
       <section className="bg-white py-20 px-6">
@@ -98,7 +104,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Value 1 */}
-            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +131,7 @@ export default function AboutPage() {
             </div>
 
             {/* Value 2 */}
-            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +156,7 @@ export default function AboutPage() {
             </div>
 
             {/* Value 3 */}
-            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +184,7 @@ export default function AboutPage() {
             </div>
 
             {/* Value 4 */}
-            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -219,7 +225,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Team Member 1 */}
-            <div className="group text-center">
+            <div className="group text-center transition-transform hover:-translate-y-1">
               <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -246,7 +252,7 @@ export default function AboutPage() {
             </div>
 
             {/* Team Member 2 */}
-            <div className="group text-center">
+            <div className="group text-center transition-transform hover:-translate-y-1">
               <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -273,7 +279,7 @@ export default function AboutPage() {
             </div>
 
             {/* Team Member 3 */}
-            <div className="group text-center">
+            <div className="group text-center transition-transform hover:-translate-y-1">
               <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -300,7 +306,7 @@ export default function AboutPage() {
             </div>
 
             {/* Team Member 4 */}
-            <div className="group text-center">
+            <div className="group text-center transition-transform hover:-translate-y-1">
               <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
