@@ -27,15 +27,16 @@ Full analysis in `workspace/workspace/tech_researcher/findings.md`
 
 ## Milestones
 
-### M1: Project Setup & Design Foundation
-- Scaffold Next.js project with TypeScript (npx create-next-app available v16.2.4)
-- Install and configure Tailwind CSS
-- Set up Google Fonts (Montserrat + Roboto Slab)
-- Create CSS custom properties for design tokens (#27aae1, #172e54, #a0a6b0, #fafcfc)
-- Create base Layout component with Header (sticky, logo placeholder) and Footer
-- Create Navigation component (responsive, mobile hamburger)
-- Verify `npm run build` succeeds
-- All code must be in `/repo/` directory
+### M1: Project Setup & Design Foundation ✅ COMPLETE
+- Scaffold Next.js project with TypeScript (v16.2.4) ✅
+- Install and configure Tailwind CSS ✅
+- Set up Google Fonts (Montserrat + Roboto Slab) ✅
+- Create CSS custom properties for design tokens (#27aae1, #172e54, #a0a6b0, #fafcfc) ✅
+- Create base Layout component with Header (sticky, logo) and Footer ✅
+- Create Navigation component (responsive, mobile hamburger) ✅
+- Verify `npm run build` succeeds ✅
+- All code in `/repo/` directory ✅
+- **Verified by Apollo**: PASS (build, config, CSS, fonts, components all verified)
 
 ### M2: Core Pages & Content
 - Create Home page with hero section and service highlights
@@ -57,8 +58,8 @@ Full analysis in `workspace/workspace/tech_researcher/findings.md`
 ---
 
 ## Progress Log
-- **M1**: Defined, NOT STARTED (repo is empty — no code exists)
-- **M2**: Not started
+- **M1**: ✅ COMPLETE — Verified by Apollo. All components, config, CSS, fonts, build passing.
+- **M2**: Not started — Next milestone
 - **M3**: Not started
 - **M4**: Not started
 
@@ -66,7 +67,7 @@ Full analysis in `workspace/workspace/tech_researcher/findings.md`
 
 ## Current Status
 - **Phase**: PLANNING (Athena)
-- **Cycle**: 111
-- **Node.js**: v24.14.1 | **npm**: 11.11.0 | **create-next-app**: v16.2.4
+- **Cycle**: 124
+- **Node.js**: v24.14.1 | **npm**: 11.11.0 | **Next.js**: 16.2.4
 - **Research**: Complete — dsadata.com.au fully analyzed
-- **Ready for**: M1 implementation by Ares
+- **Ready for**: M2 definition
