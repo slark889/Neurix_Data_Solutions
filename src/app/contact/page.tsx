@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 interface FormData {
   name: string;
@@ -91,6 +92,8 @@ export default function ContactPage() {
       {/* ── Hero Section ── */}
       <section className="bg-color-dark py-20 px-6">
         <div className="mx-auto max-w-3xl text-center">
+          {/* Accent Bar */}
+          <div className="mx-auto mb-6 h-2 w-[130px] bg-[#4bc9e8]" />
           <h1 className="mb-4 font-serif text-3xl sm:text-4xl font-semibold text-white">
             Contact Us
           </h1>
@@ -100,6 +103,9 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
+
+      {/* ── Breadcrumbs ── */}
+      <Breadcrumbs pageName="Contact" />
 
       {/* ── Contact Section (Form + Details) ── */}
       <section className="bg-white py-20 px-6">
@@ -345,7 +351,7 @@ export default function ContactPage() {
 
               <div className="space-y-6">
                 {/* Email */}
-                <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30">
+                <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30 hover:-translate-y-1">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-color-primary/10">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -373,7 +379,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Phone */}
-                <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30">
+                <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30 hover:-translate-y-1">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-color-primary/10">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -400,7 +406,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Address */}
-                <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30">
+                <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30 hover:-translate-y-1">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-color-primary/10">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -430,7 +436,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Hours */}
-                <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30">
+                <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30 hover:-translate-y-1">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-color-primary/10">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

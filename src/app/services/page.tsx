@@ -133,6 +133,8 @@ export default function ServicesPage() {
       {/* ── Hero Section ── */}
       <section className="bg-color-dark py-20 px-6">
         <div className="mx-auto max-w-3xl text-center">
+          {/* Accent Bar */}
+          <div className="mx-auto mb-6 h-2 w-[130px] bg-[#4bc9e8]" />
           <h1 className="mb-4 font-serif text-3xl sm:text-4xl font-semibold text-white">
             Our Services
           </h1>
@@ -143,6 +145,9 @@ export default function ServicesPage() {
           </p>
         </div>
       </section>
+
+      {/* ── Breadcrumbs ── */}
+      <Breadcrumbs pageName="Services" />
 
       {/* ── Services Detail Section ── */}
       <section className="bg-white py-20 px-6">

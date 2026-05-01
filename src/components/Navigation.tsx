@@ -52,13 +52,18 @@ export default function Navigation() {
               <Link
                 href={link.href}
                 aria-current={isActive ? "page" : undefined}
-                className={`text-sm font-medium uppercase tracking-wider transition-colors ${
+                className={`group relative text-sm font-medium uppercase tracking-wider transition-colors ${
                   isActive
                     ? "text-color-primary"
                     : "text-color-body hover:text-color-primary"
                 }`}
               >
                 {link.label}
+                <span
+                  className={`absolute -bottom-1 left-1/2 -translate-x-1/2 h-[2px] bg-color-primary transition-all duration-300 ease-out ${
+                    isActive ? "w-[80%]" : "w-0 group-hover:w-[80%]"
+                  }`}
+                />
               </Link>
             </li>
           );

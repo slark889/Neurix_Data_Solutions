@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Terms of Service — Neurix Data Solutions",
@@ -13,6 +14,8 @@ export default function TermsPage() {
       {/* ── Hero Section ── */}
       <section className="bg-color-dark py-20 px-6">
         <div className="mx-auto max-w-3xl text-center">
+          {/* Accent Bar */}
+          <div className="mx-auto mb-6 h-2 w-[130px] bg-[#4bc9e8]" />
           <h1 className="mb-4 font-serif text-3xl sm:text-4xl font-semibold text-white">
             Terms of Service
           </h1>
@@ -21,6 +24,9 @@ export default function TermsPage() {
           </p>
         </div>
       </section>
+
+      {/* ── Breadcrumbs ── */}
+      <Breadcrumbs pageName="Terms" />
 
       {/* ── Content Section ── */}
       <section className="bg-white py-20 px-6">

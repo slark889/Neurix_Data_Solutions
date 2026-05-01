@@ -12,13 +12,18 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-1">
       {/* ── Hero Section ── */}
-      <section className="flex flex-col items-center justify-center">
+      <section
+        className="flex flex-col items-center justify-center"
+        style={{
+          background: "radial-gradient(ellipse 80% 60% at 50% -10%, #1a5a8a 0%, #172e54 40%, #0f1f38 100%)",
+        }}
+      >
         <div className="flex w-full max-w-3xl flex-col items-center justify-between gap-10 py-20 sm:py-32 px-6 sm:items-start">
           <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-            <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-color-dark font-serif">
+            <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-white font-serif">
               Neurix Data Solutions
             </h1>
-            <p className="max-w-md text-lg leading-8 text-color-body">
+            <p className="max-w-md text-lg leading-8 text-white/80">
               Automation methods for Power BI, Alteryx, SQL Server, and Oracle SQL.
             </p>
           </div>
