@@ -59,7 +59,7 @@ export default function Navigation() {
       {isOpen && (
         <ul
           id="mobile-menu"
-          className="absolute top-full left-0 right-0 bg-color-bg border-t border-color-body/10 shadow-lg md:hidden"
+          className="absolute top-full left-6 right-6 bg-color-bg border-t border-color-body/10 shadow-lg md:hidden"
         >
           {navLinks.map((link) => (
             <li key={link.href}>

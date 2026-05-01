@@ -17,7 +17,7 @@ export default function PrivacyPage() {
 
       {/* ── Content Section ── */}
       <section className="bg-white py-20 px-6">
-        <div className="mx-auto max-w-3xl prose prose-sm sm:prose-base text-color-body leading-relaxed space-y-8">
+        <div className="mx-auto max-w-3xl text-color-body leading-relaxed space-y-8">
           {/* Introduction */}
           <div>
             <h2 className="mb-3 font-serif text-2xl font-semibold text-color-dark">
