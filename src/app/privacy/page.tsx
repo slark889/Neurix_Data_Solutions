@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — Neurix Data Solutions",
@@ -13,6 +14,8 @@ export default function PrivacyPage() {
       {/* ── Hero Section ── */}
       <section className="bg-color-dark py-20 px-6">
         <div className="mx-auto max-w-3xl text-center">
+          {/* Accent Bar */}
+          <div className="mx-auto mb-6 h-2 w-[130px] bg-[#4bc9e8]" />
           <h1 className="mb-4 font-serif text-3xl sm:text-4xl font-semibold text-white">
             Privacy Policy
           </h1>
@@ -21,6 +24,9 @@ export default function PrivacyPage() {
           </p>
         </div>
       </section>
+
+      {/* ── Breadcrumbs ── */}
+      <Breadcrumbs pageName="Privacy" />
 
       {/* ── Content Section ── */}
       <section className="bg-white py-20 px-6">
