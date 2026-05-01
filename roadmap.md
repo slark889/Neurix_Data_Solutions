@@ -102,7 +102,7 @@ Fixed all issues found in Athena's independent audit (Elara + Nico). Verified by
 - All 18 issues from independent audit fixed and verified by Apollo
 - Build passes, lint zero errors
 
-### M4: Visual Polish & Reference Site Alignment (NEXT)
+### M4: Visual Polish & Reference Site Alignment ✅ COMPLETE
 Bring the site closer to the dsadata.com.au reference site's polished look and feel. No image generation required — focus on CSS animations, transitions, and structural enhancements.
 
 **Navigation & Header:**
@@ -131,6 +131,31 @@ Bring the site closer to the dsadata.com.au reference site's polished look and f
 - All code in `/repo/` directory
 - Do NOT attempt minimax image generation
 - Do NOT add new dependencies — use CSS and existing tools only
+- **Verified by Apollo**: All 12 items PASS. Build and lint clean.
+
+### M5: Bug Fixes & Final Accessibility (NEXT)
+Fix all issues found in Athena's second independent audit (Elara + Nico, cycle 156). Focus on real bugs and accessibility gaps.
+
+**BUGS:**
+1. Fix AnimateOnScroll memory leak — store timeout ID with `useRef` and clear in cleanup
+2. Fix `console.error` in `error.tsx` — guard behind `process.env.NODE_ENV === "development"` or remove
+
+**ACCESSIBILITY:**
+3. Wrap phone numbers in `<a href="tel:...">` on contact, privacy, and terms pages (currently in `<span>`)
+4. Add `aria-hidden="true"` to all decorative inline SVGs (15+ instances across all pages)
+5. Add custom `focus-visible` outline styles to navigation and footer links (currently only default browser focus)
+
+**CONTENT:**
+6. Label fake team profiles as "Placeholder" on about page (currently undisclosed — team section has no placeholder badges unlike contact info)
+
+**CLEANUP:**
+7. Delete unused `src/app/favicon.ico` (25KB boilerplate, layout.tsx uses `public/favicon.svg`)
+
+**Requirements:**
+- `npm run build` succeeds with zero errors
+- `npm run lint` passes with zero errors
+- All code in `/repo/` directory
+- Do NOT attempt minimax image generation
 
 ---
 
@@ -139,13 +164,14 @@ Bring the site closer to the dsadata.com.au reference site's polished look and f
 - **M2**: ✅ COMPLETE — All 6 core pages + Terms created. Build passes.
 - **M2.5.1 (Lint Fixes)**: ✅ COMPLETE — All `<a>` → `<Link>`, custom eslint rule enabled, lint 0 errors, build passes. Verified by Apollo.
 - **M2.5.2 (Images)**: ⛔ BLOCKED — Awaiting minimax API key from human (GitHub Issue #2).
-- **M3**: ✅ COMPLETE — All 18 quality/accessibility/polish items fixed. Verified by Apollo (cycle 1).
+- **M3**: ✅ COMPLETE — All 18 quality/accessibility/polish items fixed. Verified by Apollo.
+- **M4**: ✅ COMPLETE — All 12 visual polish items (nav underline, header shrink, breadcrumbs, accent bar, back-to-top, hero gradient, entrance animations, button scale, card lift, SVG favicon, robots.txt, sitemap.xml). Verified by Apollo.
 
 ---
 
 ## Current Status
 - **Phase**: PLANNING (Athena)
-- **Cycle**: 151 (Epoch 4)
+- **Cycle**: 156 (Epoch 5)
 - **Node.js**: v24.14.1 | **npm**: 11.11.0 | **Next.js**: 16.2.4
 - **Research**: Complete — dsadata.com.au fully analyzed
-- **Ready for**: M4 handoff to Ares
+- **Ready for**: M5 handoff to Ares
