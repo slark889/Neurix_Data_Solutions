@@ -217,9 +217,12 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <strong className="text-color-dark">Phone:</strong>{" "}
-                <span className="text-color-body">
+                <a
+                  href="tel:+15551234567"
+                  className="text-color-primary hover:underline"
+                >
                   +1 (555) 123-4567
-                </span>
+                </a>
                 <span className="ml-1.5 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
                   Placeholder
                 </span>

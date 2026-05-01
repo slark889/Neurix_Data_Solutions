@@ -259,6 +259,9 @@ export default function AboutPage() {
                 Power BI &amp; SQL Server specialist with 12+ years of
                 enterprise data architecture experience.
               </p>
+              <span className="ml-1.5 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
+                Placeholder
+              </span>
             </div>
 
             {/* Team Member 2 */}
@@ -286,6 +289,9 @@ export default function AboutPage() {
                 Certified Alteryx expert specializing in end-to-end workflow
                 automation and analytics process design.
               </p>
+              <span className="ml-1.5 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
+                Placeholder
+              </span>
             </div>
 
             {/* Team Member 3 */}
@@ -313,6 +319,9 @@ export default function AboutPage() {
                 Oracle Certified Professional with deep PL/SQL and enterprise
                 database administration expertise.
               </p>
+              <span className="ml-1.5 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
+                Placeholder
+              </span>
             </div>
 
             {/* Team Member 4 */}
@@ -340,6 +349,9 @@ export default function AboutPage() {
                 Expert in crafting compelling data narratives through
                 interactive dashboards and visual analytics.
               </p>
+              <span className="ml-1.5 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
+                Placeholder
+              </span>
             </div>
           </div>
         </div>

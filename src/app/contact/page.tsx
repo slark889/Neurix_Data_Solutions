@@ -396,9 +396,12 @@ export default function ContactPage() {
                     <h3 className="mb-1 font-serif text-base font-semibold text-color-dark">
                       Phone
                     </h3>
-                    <span className="text-sm text-color-body">
+                    <a
+                      href="tel:+15551234567"
+                      className="text-sm text-color-body hover:text-color-primary transition-colors"
+                    >
                       +1 (555) 123-4567
-                    </span>
+                    </a>
                     <span className="ml-1.5 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
                       Placeholder
                     </span>
