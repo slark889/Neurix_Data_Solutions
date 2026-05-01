@@ -144,6 +144,9 @@ export default function ContactPage() {
                     Thank you for reaching out. We&apos;ll get back to you as
                     soon as possible.
                   </p>
+                  <p className="mt-3 text-xs text-color-body/60 text-center">
+                    (This is a demo — no message was sent.)
+                  </p>
                   <button
                     type="button"
                     onClick={() => {
