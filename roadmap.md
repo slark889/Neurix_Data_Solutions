@@ -38,36 +38,42 @@ Full analysis in `workspace/workspace/tech_researcher/findings.md`
 - All code in `/repo/` directory ✅
 - **Verified by Apollo**: PASS (build, config, CSS, fonts, components all verified)
 
-### M2: Core Pages & Content
-- Create Home page with hero section and service highlights
-- Create Services page detailing Power BI, Alteryx, SQL offerings
-- Create About page with company information
-- Create Contact page with form
+### M2: Core Pages & Content ✅ COMPLETE
+- Home page with hero, 4 service cards, value proposition, CTA ✅
+- Services page with 4 areas (Power BI, Alteryx, SQL Server, Oracle SQL) ✅
+- About page with company story, mission, values, team ✅
+- Contact page with form (name, email, subject, message) + company details ✅
+- Privacy page with standard privacy policy content ✅
+- Terms of Service page ✅
+- All 7 routes render as static content, `npm run build` succeeds ✅
+- **Known issues**: 4 lint errors (`<a>` instead of `<Link>`) — to be fixed in M2.5
 
-### M3: AI-Generated Assets
-- Generate images using minimax API
-- Integrate all visual assets
-- Ensure responsive design across devices
+### M2.5: Polish & AI-Generated Visual Assets (NEXT)
+- Fix all lint errors (4 `<a>` → `<Link>` replacements in contact, privacy, services, terms)
+- Generate hero/background images using minimax API
+- Generate service/icon images using minimax API
+- Integrate all visual assets into site pages
+- Ensure `npm run build` succeeds and `npm run lint` passes with zero errors
 
-### M4: Testing & Polish
+### M3: Testing & Final Polish
 - Cross-browser testing
 - Mobile responsiveness verification
-- Bug fixes and polish
 - Performance optimization
+- Final bug fixes
 
 ---
 
 ## Progress Log
 - **M1**: ✅ COMPLETE — Verified by Apollo. All components, config, CSS, fonts, build passing.
-- **M2**: Not started — Next milestone
+- **M2**: ✅ COMPLETE — All 6 core pages + Terms created. Build passes. 4 minor lint issues remain.
+- **M2.5**: Next milestone — fix lint errors + generate/integrate minimax images
 - **M3**: Not started
-- **M4**: Not started
 
 ---
 
 ## Current Status
 - **Phase**: PLANNING (Athena)
-- **Cycle**: 124
+- **Cycle**: 133
 - **Node.js**: v24.14.1 | **npm**: 11.11.0 | **Next.js**: 16.2.4
 - **Research**: Complete — dsadata.com.au fully analyzed
-- **Ready for**: M2 definition
+- **Ready for**: M2.5 handoff to Ares
