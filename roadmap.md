@@ -63,8 +63,8 @@ Full analysis in `workspace/workspace/tech_researcher/findings.md`
 - **Escalated to human**: GitHub Issue #2 — "HUMAN: minimax API key unavailable"
 - **Cannot proceed** without minimax API key from human
 
-### M3: Quality, Accessibility & Polish (NEXT)
-Fix all issues found in Athena's independent audit (Elara + Nico). Image generation remains BLOCKED.
+### M3: Quality, Accessibility & Polish ✅ COMPLETE
+Fixed all issues found in Athena's independent audit (Elara + Nico). Verified by Apollo. Image generation remains BLOCKED.
 
 **CRITICAL — Accessibility:**
 1. Fix body text contrast: `--color-body: #a0a6b0` fails WCAG AA (2.38:1 on `#fafcfc`). Darken to `#6b7280` (4.50:1)
@@ -98,6 +98,40 @@ Fix all issues found in Athena's independent audit (Elara + Nico). Image generat
 - All code in `/repo/` directory
 - Minimax image generation remains BLOCKED — do NOT attempt
 
+### M3: Quality, Accessibility & Polish ✅ COMPLETE
+- All 18 issues from independent audit fixed and verified by Apollo
+- Build passes, lint zero errors
+
+### M4: Visual Polish & Reference Site Alignment (NEXT)
+Bring the site closer to the dsadata.com.au reference site's polished look and feel. No image generation required — focus on CSS animations, transitions, and structural enhancements.
+
+**Navigation & Header:**
+1. Animated underline on desktop nav hover (80% width, centered, primary color — matching reference's `menu-line-below`)
+2. Header shrink on scroll (logo height: 48px → 36px, padding reduces)
+3. Smooth scroll transition on header state changes
+
+**Sub-page Enhancements:**
+4. Add breadcrumbs to all sub-pages (About, Services, Contact, Privacy, Terms) — matching reference's subheader breadcrumb pattern
+5. Add decorative turquoise accent bar above sub-page hero titles (matching reference's `#4bc9e8` bar, ~130px × 8px)
+
+**UI Polish:**
+6. Add "Back to Top" button (appears on scroll, smooth scroll to top)
+7. Enhance hero section on Home page with CSS gradient background (navy-to-dark gradient to add visual depth without images)
+8. Add subtle entrance animations to service cards and value props (fade-in on scroll)
+9. Improve button hover transitions (scale effect, shadow)
+10. Add hover card lift effect (subtle translateY on service/value cards)
+
+**Misc:**
+11. Replace default Next.js favicon.ico with a simple SVG-based favicon using the primary color
+12. Add `robots.txt` and `sitemap.xml` for SEO
+
+**Requirements:**
+- `npm run build` succeeds with zero errors
+- `npm run lint` passes with zero errors
+- All code in `/repo/` directory
+- Do NOT attempt minimax image generation
+- Do NOT add new dependencies — use CSS and existing tools only
+
 ---
 
 ## Progress Log
@@ -105,14 +139,13 @@ Fix all issues found in Athena's independent audit (Elara + Nico). Image generat
 - **M2**: ✅ COMPLETE — All 6 core pages + Terms created. Build passes.
 - **M2.5.1 (Lint Fixes)**: ✅ COMPLETE — All `<a>` → `<Link>`, custom eslint rule enabled, lint 0 errors, build passes. Verified by Apollo.
 - **M2.5.2 (Images)**: ⛔ BLOCKED — Awaiting minimax API key from human (GitHub Issue #2).
-- **M3**: Current — Quality, accessibility, polish. All issues from independent audit.
+- **M3**: ✅ COMPLETE — All 18 quality/accessibility/polish items fixed. Verified by Apollo (cycle 1).
 
 ---
 
 ## Current Status
 - **Phase**: PLANNING (Athena)
-- **Cycle**: ~144
+- **Cycle**: 151 (Epoch 4)
 - **Node.js**: v24.14.1 | **npm**: 11.11.0 | **Next.js**: 16.2.4
 - **Research**: Complete — dsadata.com.au fully analyzed
-- **Independent audit**: Complete — Elara (17 issues), Nico (4 issues)
-- **Ready for**: M3 handoff to Ares
+- **Ready for**: M4 handoff to Ares
