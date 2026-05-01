@@ -133,29 +133,45 @@ Bring the site closer to the dsadata.com.au reference site's polished look and f
 - Do NOT add new dependencies — use CSS and existing tools only
 - **Verified by Apollo**: All 12 items PASS. Build and lint clean.
 
-### M5: Bug Fixes & Final Accessibility (NEXT)
+### M5: Bug Fixes & Final Accessibility ✅ COMPLETE
 Fix all issues found in Athena's second independent audit (Elara + Nico, cycle 156). Focus on real bugs and accessibility gaps.
 
 **BUGS:**
-1. Fix AnimateOnScroll memory leak — store timeout ID with `useRef` and clear in cleanup
-2. Fix `console.error` in `error.tsx` — guard behind `process.env.NODE_ENV === "development"` or remove
+1. Fix AnimateOnScroll memory leak — store timeout ID with `useRef` and clear in cleanup ✅
+2. Fix `console.error` in `error.tsx` — guard behind `process.env.NODE_ENV === "development"` ✅
 
 **ACCESSIBILITY:**
-3. Wrap phone numbers in `<a href="tel:...">` on contact, privacy, and terms pages (currently in `<span>`)
-4. Add `aria-hidden="true"` to all decorative inline SVGs (15+ instances across all pages)
-5. Add custom `focus-visible` outline styles to navigation and footer links (currently only default browser focus)
+3. Wrap phone numbers in `<a href="tel:...">` on contact, privacy, and terms pages ✅
+4. Add `aria-hidden="true"` to all decorative inline SVGs (37+ instances across all pages) ✅
+5. Add custom `focus-visible` outline styles to navigation and footer links ✅
 
 **CONTENT:**
-6. Label fake team profiles as "Placeholder" on about page (currently undisclosed — team section has no placeholder badges unlike contact info)
+6. Label fake team profiles as "Placeholder" on about page ✅
 
 **CLEANUP:**
-7. Delete unused `src/app/favicon.ico` (25KB boilerplate, layout.tsx uses `public/favicon.svg`)
+7. Delete unused `src/app/favicon.ico` ✅
+
+**Verified by Apollo**: All 7 items PASS. Build and lint clean.
+
+### M6: Final Polish — Contrast Fix & Remaining Issues (NEXT)
+Fix the one remaining CRITICAL issue and several LOW-priority polish items found in the independent content audit.
+
+**CRITICAL — Accessibility:**
+1. Fix primary color contrast: `#1a8ab8` fails WCAG AA for normal text on `#fafcfc` (3.87:1, needs ≥4.5:1). Darken `--color-primary` from `#1a8ab8` to `#157a9e` in globals.css. This affects "Learn more" links, contact info links, and any `text-sm` or `text-base` text using the primary color.
+
+**LOW — UX Polish:**
+2. Add demo notice to contact form success state — users currently see "Thank you for reaching out" with no indication the message wasn't actually sent. Add a subtle "(This is a demo — no message was sent.)" note to the success view.
+3. Clean up blank line inconsistency in about/page.tsx imports (between Breadcrumbs and AnimateOnScroll imports)
+
+**INFO — Spec Fix:**
+4. Fix typo in spec.md: "Power Bi dashboard" → "Power BI dashboard"
 
 **Requirements:**
 - `npm run build` succeeds with zero errors
 - `npm run lint` passes with zero errors
 - All code in `/repo/` directory
 - Do NOT attempt minimax image generation
+- Do NOT add new dependencies
 
 ---
 
@@ -166,12 +182,12 @@ Fix all issues found in Athena's second independent audit (Elara + Nico, cycle 1
 - **M2.5.2 (Images)**: ⛔ BLOCKED — Awaiting minimax API key from human (GitHub Issue #2).
 - **M3**: ✅ COMPLETE — All 18 quality/accessibility/polish items fixed. Verified by Apollo.
 - **M4**: ✅ COMPLETE — All 12 visual polish items (nav underline, header shrink, breadcrumbs, accent bar, back-to-top, hero gradient, entrance animations, button scale, card lift, SVG favicon, robots.txt, sitemap.xml). Verified by Apollo.
+- **M5**: ✅ COMPLETE — All 7 bug fixes & accessibility items (memory leak, console guard, tel: links, aria-hidden SVGs, focus-visible, placeholder badges, favicon.ico cleanup). Verified by Apollo.
 
 ---
 
 ## Current Status
 - **Phase**: PLANNING (Athena)
-- **Cycle**: 156 (Epoch 5)
+- **M6 defined**: Final contrast fix + remaining polish
+- **Blocked**: M2.5.2 minimax image generation (awaiting API key from human)
 - **Node.js**: v24.14.1 | **npm**: 11.11.0 | **Next.js**: 16.2.4
-- **Research**: Complete — dsadata.com.au fully analyzed
-- **Ready for**: M5 handoff to Ares

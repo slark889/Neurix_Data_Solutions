@@ -4,7 +4,7 @@
 
 Build one website for me , you can replicate the similar style as https://dsadata.com.au/
 
-my company want to focus on developing automation methods for Power Bi dashboard, Alteryx, SQL Server, Oracle SQL. but target at PBI dashboard firstly as a starting point.
+my company want to focus on developing automation methods for Power BI dashboard, Alteryx, SQL Server, Oracle SQL. but target at PBI dashboard firstly as a starting point.
 
 ## How do you consider the project is success?
 
