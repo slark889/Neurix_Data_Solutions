@@ -8,9 +8,9 @@ export default function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-xl font-bold font-serif text-color-dark whitespace-nowrap"
+          className="text-2xl sm:text-3xl font-bold font-serif text-color-dark whitespace-nowrap"
         >
-          Neurix<span className="text-color-primary">DS</span>
+          Neurix<span className="text-color-primary font-extrabold">DS</span>
         </Link>
 
         {/* Navigation */}
