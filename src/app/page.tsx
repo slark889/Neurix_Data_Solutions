@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="flex flex-col flex-1">
@@ -13,18 +15,18 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-            <a
+            <Link
               className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-color-primary px-5 text-white transition-colors hover:opacity-90 md:w-[158px]"
               href="/contact"
             >
               Get Started
-            </a>
-            <a
+            </Link>
+            <Link
               className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-color-body px-5 text-color-body transition-colors hover:border-color-primary hover:text-color-primary md:w-[158px]"
               href="/services"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -65,7 +67,7 @@ export default function Home() {
               <p className="text-sm text-color-body leading-relaxed">
                 Streamline your reporting with automated Power BI dashboards that deliver real-time insights and reduce manual effort.
               </p>
-              <a
+              <Link
                 href="/services"
                 className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-color-primary hover:underline"
               >
@@ -82,7 +84,7 @@ export default function Home() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* Card 2: Alteryx */}
@@ -109,7 +111,7 @@ export default function Home() {
               <p className="text-sm text-color-body leading-relaxed">
                 Design and deploy repeatable Alteryx workflows that transform raw data into clean, analysis-ready datasets.
               </p>
-              <a
+              <Link
                 href="/services"
                 className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-color-primary hover:underline"
               >
@@ -126,7 +128,7 @@ export default function Home() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* Card 3: SQL Server */}
@@ -151,7 +153,7 @@ export default function Home() {
               <p className="text-sm text-color-body leading-relaxed">
                 Optimize query performance, automate ETL pipelines, and maintain robust SQL Server environments at scale.
               </p>
-              <a
+              <Link
                 href="/services"
                 className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-color-primary hover:underline"
               >
@@ -168,7 +170,7 @@ export default function Home() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* Card 4: Oracle SQL */}
@@ -196,7 +198,7 @@ export default function Home() {
               <p className="text-sm text-color-body leading-relaxed">
                 Leverage advanced PL/SQL, performance tuning, and data migration strategies for enterprise Oracle systems.
               </p>
-              <a
+              <Link
                 href="/services"
                 className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-color-primary hover:underline"
               >
@@ -213,7 +215,7 @@ export default function Home() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -314,18 +316,18 @@ export default function Home() {
             Let&apos;s discuss how Neurix Data Solutions can streamline your BI workflows, optimize your databases, and unlock the full potential of your data.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row justify-center">
-            <a
+            <Link
               href="/contact"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-color-primary px-8 text-base font-medium text-white transition-colors hover:opacity-90"
             >
               Contact Us
-            </a>
-            <a
+            </Link>
+            <Link
               href="/services"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-white/30 px-8 text-base font-medium text-white transition-colors hover:border-color-primary hover:text-color-primary"
             >
               Explore Services
-            </a>
+            </Link>
           </div>
         </div>
       </section>
