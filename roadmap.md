@@ -63,13 +63,40 @@ Full analysis in `workspace/workspace/tech_researcher/findings.md`
 - **Escalated to human**: GitHub Issue #2 — "HUMAN: minimax API key unavailable"
 - **Cannot proceed** without minimax API key from human
 
-### M3: Testing & Final Polish (NEXT)
-- Cross-browser rendering verification
-- Mobile responsiveness testing (all breakpoints)
-- Performance audit (Lighthouse / Core Web Vitals)
-- Accessibility audit
-- Content review and final bug fixes
-- Clean up uncommitted changes and stale branches
+### M3: Quality, Accessibility & Polish (NEXT)
+Fix all issues found in Athena's independent audit (Elara + Nico). Image generation remains BLOCKED.
+
+**CRITICAL — Accessibility:**
+1. Fix body text contrast: `--color-body: #a0a6b0` fails WCAG AA (2.38:1 on `#fafcfc`). Darken to `#6b7280` (4.50:1)
+2. Fix primary accent contrast: `--color-primary: #27aae1` fails on both white text (2.65:1) and background (2.57:1). Darken to `#1a8ab8`
+3. Fix future-dated "Last updated: May 2, 2026" on privacy + terms pages
+
+**HIGH — SEO, UX, Content:**
+4. Add per-page `metadata` exports (unique titles + descriptions) to all 6 sub-pages
+5. Contact form: add loading state to fake submission, or label as demo
+6. Replace placeholder contact info (555 phone, fake address) or mark as placeholder
+7. Add `aria-describedby` linking form errors to inputs
+
+**MEDIUM — UX, Content, Code Quality:**
+8. Add active nav state indicator using `usePathname()`
+9. Expand Footer with additional nav links (Home, Services, About, Contact)
+10. Remove dead `prose` classes from privacy + terms pages (typography plugin not installed)
+11. Add skip-to-content link for keyboard accessibility
+12. Delete unused boilerplate SVGs: `public/file.svg`, `globe.svg`, `next.svg`, `vercel.svg`, `window.svg`
+
+**LOW:**
+13. Adjust Home page hero padding for mobile (`py-32` → responsive)
+14. Fix mobile nav menu edge alignment with header padding
+15. Add `maxLength` to contact form inputs
+16. Add `error.tsx`, `loading.tsx`, `not-found.tsx`
+17. Fix inconsistent quote style in `about/page.tsx`
+18. Fix eslint script: `"eslint"` → `"eslint ."`
+
+**Requirements:**
+- `npm run build` succeeds with zero errors
+- `npm run lint` passes with zero errors
+- All code in `/repo/` directory
+- Minimax image generation remains BLOCKED — do NOT attempt
 
 ---
 
@@ -78,7 +105,7 @@ Full analysis in `workspace/workspace/tech_researcher/findings.md`
 - **M2**: ✅ COMPLETE — All 6 core pages + Terms created. Build passes.
 - **M2.5.1 (Lint Fixes)**: ✅ COMPLETE — All `<a>` → `<Link>`, custom eslint rule enabled, lint 0 errors, build passes. Verified by Apollo.
 - **M2.5.2 (Images)**: ⛔ BLOCKED — Awaiting minimax API key from human (GitHub Issue #2).
-- **M3**: Next milestone — testing, polish, accessibility, cleanup.
+- **M3**: Current — Quality, accessibility, polish. All issues from independent audit.
 
 ---
 
@@ -87,4 +114,5 @@ Full analysis in `workspace/workspace/tech_researcher/findings.md`
 - **Cycle**: ~144
 - **Node.js**: v24.14.1 | **npm**: 11.11.0 | **Next.js**: 16.2.4
 - **Research**: Complete — dsadata.com.au fully analyzed
-- **Ready for**: M3 handoff to Ares (while M2.5.2 awaits human response)
+- **Independent audit**: Complete — Elara (17 issues), Nico (4 issues)
+- **Ready for**: M3 handoff to Ares
