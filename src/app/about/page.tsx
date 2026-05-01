@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About Neurix Data Solutions — Our Story & Mission",
+  description:
+    "Learn about Neurix Data Solutions — our mission, team, and the values that drive us to deliver intelligent data automation for Power BI, Alteryx, SQL Server, and Oracle SQL.",
+};
 
 export default function AboutPage() {
   return (

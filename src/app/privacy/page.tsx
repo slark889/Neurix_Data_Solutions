@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy — Neurix Data Solutions",
+  description:
+    "Neurix Data Solutions privacy policy — learn how we collect, use, and protect your personal information when you visit our website and use our services.",
+};
 
 export default function PrivacyPage() {
   return (
@@ -10,7 +17,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="text-base text-color-body/80 max-w-xl mx-auto leading-relaxed">
-            Last updated: May 2, 2026
+            Last updated: March 15, 2025
           </p>
         </div>
       </section>
@@ -204,16 +211,19 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <strong className="text-color-dark">Phone:</strong>{" "}
-                <a
-                  href="tel:+15551234567"
-                  className="text-color-primary hover:underline"
-                >
+                <span className="text-color-body">
                   +1 (555) 123-4567
-                </a>
+                </span>
+                <span className="ml-1.5 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
+                  Placeholder
+                </span>
               </li>
               <li>
                 <strong className="text-color-dark">Address:</strong> 451 Data
                 Drive, Suite 200, San Francisco, CA 94105
+                <span className="ml-1.5 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
+                  Placeholder
+                </span>
               </li>
             </ul>
           </div>

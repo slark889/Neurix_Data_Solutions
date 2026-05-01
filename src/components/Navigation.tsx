@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const navLinks = [
@@ -12,6 +13,7 @@ const navLinks = [
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav aria-label="Main navigation">
@@ -43,16 +45,24 @@ export default function Navigation() {
 
       {/* Desktop navigation */}
       <ul className="hidden md:flex items-center gap-8">
-        {navLinks.map((link) => (
-          <li key={link.href}>
-            <Link
-              href={link.href}
-              className="text-sm font-medium text-color-body uppercase tracking-wider hover:text-color-primary transition-colors"
-            >
-              {link.label}
-            </Link>
-          </li>
-        ))}
+        {navLinks.map((link) => {
+          const isActive = pathname === link.href;
+          return (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                aria-current={isActive ? "page" : undefined}
+                className={`text-sm font-medium uppercase tracking-wider transition-colors ${
+                  isActive
+                    ? "text-color-primary"
+                    : "text-color-body hover:text-color-primary"
+                }`}
+              >
+                {link.label}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
 
       {/* Mobile menu dropdown */}
@@ -61,17 +71,25 @@ export default function Navigation() {
           id="mobile-menu"
           className="absolute top-full left-6 right-6 bg-color-bg border-t border-color-body/10 shadow-lg md:hidden"
         >
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className="block px-6 py-4 text-base font-medium text-color-body hover:text-color-primary hover:bg-color-primary/5 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  aria-current={isActive ? "page" : undefined}
+                  className={`block px-6 py-4 text-base font-medium transition-colors ${
+                    isActive
+                      ? "text-color-primary bg-color-primary/5"
+                      : "text-color-body hover:text-color-primary hover:bg-color-primary/5"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       )}
     </nav>

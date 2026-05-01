@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Services — Power BI, Alteryx, SQL Server & Oracle Automation",
+  description:
+    "Comprehensive data automation services including Power BI dashboard automation, Alteryx workflow design, SQL Server optimization, and Oracle PL/SQL solutions tailored to your business.",
+};
 
 export default function ServicesPage() {
   const services = [

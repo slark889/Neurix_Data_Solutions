@@ -13,6 +13,38 @@ export default function Footer() {
           <ul className="flex items-center gap-6">
             <li>
               <Link
+                href="/"
+                className="text-sm text-color-body hover:text-color-primary transition-colors"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services"
+                className="text-sm text-color-body hover:text-color-primary transition-colors"
+              >
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="text-sm text-color-body hover:text-color-primary transition-colors"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="text-sm text-color-body hover:text-color-primary transition-colors"
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/privacy"
                 className="text-sm text-color-body hover:text-color-primary transition-colors"
               >

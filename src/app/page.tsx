@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Neurix Data Solutions — Automation for Power BI, Alteryx & SQL",
+  description:
+    "Neurix Data Solutions provides intelligent automation methods for Power BI, Alteryx, SQL Server, and Oracle SQL. Streamline your data workflows and unlock real-time insights.",
+};
 
 export default function Home() {
   return (

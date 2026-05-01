@@ -27,6 +27,7 @@ export default function ContactPage() {
 
   const [errors, setErrors] = useState<FormErrors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   function validate(): FormErrors {
     const newErrors: FormErrors = {};
@@ -78,7 +79,11 @@ export default function ContactPage() {
     }
 
     // Simulate form submission (no backend)
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitted(true);
+    }, 1000);
   }
 
   return (
@@ -161,6 +166,8 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Your full name"
+                      maxLength={100}
+                      aria-describedby={errors.name ? "name-error" : undefined}
                       className={`w-full rounded-lg border bg-color-bg px-4 py-2.5 text-sm text-color-dark placeholder:text-color-body/60 transition-colors focus:outline-none focus:ring-2 focus:ring-color-primary/40 ${
                         errors.name
                           ? "border-red-400"
@@ -168,7 +175,7 @@ export default function ContactPage() {
                       }`}
                     />
                     {errors.name && (
-                      <p className="mt-1 text-xs text-red-500">{errors.name}</p>
+                      <p id="name-error" className="mt-1 text-xs text-red-500">{errors.name}</p>
                     )}
                   </div>
 
@@ -187,6 +194,8 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="you@example.com"
+                      maxLength={254}
+                      aria-describedby={errors.email ? "email-error" : undefined}
                       className={`w-full rounded-lg border bg-color-bg px-4 py-2.5 text-sm text-color-dark placeholder:text-color-body/60 transition-colors focus:outline-none focus:ring-2 focus:ring-color-primary/40 ${
                         errors.email
                           ? "border-red-400"
@@ -194,7 +203,7 @@ export default function ContactPage() {
                       }`}
                     />
                     {errors.email && (
-                      <p className="mt-1 text-xs text-red-500">
+                      <p id="email-error" className="mt-1 text-xs text-red-500">
                         {errors.email}
                       </p>
                     )}
@@ -215,6 +224,8 @@ export default function ContactPage() {
                       value={formData.subject}
                       onChange={handleChange}
                       placeholder="What is this about?"
+                      maxLength={200}
+                      aria-describedby={errors.subject ? "subject-error" : undefined}
                       className={`w-full rounded-lg border bg-color-bg px-4 py-2.5 text-sm text-color-dark placeholder:text-color-body/60 transition-colors focus:outline-none focus:ring-2 focus:ring-color-primary/40 ${
                         errors.subject
                           ? "border-red-400"
@@ -222,7 +233,7 @@ export default function ContactPage() {
                       }`}
                     />
                     {errors.subject && (
-                      <p className="mt-1 text-xs text-red-500">
+                      <p id="subject-error" className="mt-1 text-xs text-red-500">
                         {errors.subject}
                       </p>
                     )}
@@ -243,6 +254,8 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       placeholder="Tell us about your project or question..."
+                      maxLength={2000}
+                      aria-describedby={errors.message ? "message-error" : undefined}
                       className={`w-full rounded-lg border bg-color-bg px-4 py-2.5 text-sm text-color-dark placeholder:text-color-body/60 transition-colors focus:outline-none focus:ring-2 focus:ring-color-primary/40 resize-y ${
                         errors.message
                           ? "border-red-400"
@@ -250,7 +263,7 @@ export default function ContactPage() {
                       }`}
                     />
                     {errors.message && (
-                      <p className="mt-1 text-xs text-red-500">
+                      <p id="message-error" className="mt-1 text-xs text-red-500">
                         {errors.message}
                       </p>
                     )}
@@ -259,29 +272,63 @@ export default function ContactPage() {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-color-primary px-8 text-base font-medium text-white transition-colors hover:opacity-90"
+                    disabled={isSubmitting}
+                    className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-color-primary px-8 text-base font-medium text-white transition-colors hover:opacity-90 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      className="h-5 w-5"
-                    >
-                      <path
-                        d="M22 2L11 13"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M22 2L15 22L11 13L2 9L22 2Z"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                    Send Message
+                    {isSubmitting ? (
+                      <>
+                        <svg
+                          className="h-5 w-5 animate-spin"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <circle
+                            className="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                          />
+                          <path
+                            className="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                          />
+                        </svg>
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          className="h-5 w-5"
+                        >
+                          <path
+                            d="M22 2L11 13"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M22 2L15 22L11 13L2 9L22 2Z"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                        Send Message
+                      </>
+                    )}
                   </button>
+
+                  {/* Demo notice */}
+                  <p className="text-xs text-color-body/60 text-center">
+                    This is a demo form. Messages are not actually sent.
+                  </p>
                 </form>
               )}
             </div>
@@ -343,12 +390,12 @@ export default function ContactPage() {
                     <h3 className="mb-1 font-serif text-base font-semibold text-color-dark">
                       Phone
                     </h3>
-                    <a
-                      href="tel:+15551234567"
-                      className="text-sm text-color-body hover:text-color-primary transition-colors"
-                    >
+                    <span className="text-sm text-color-body">
                       +1 (555) 123-4567
-                    </a>
+                    </span>
+                    <span className="ml-1.5 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
+                      Placeholder
+                    </span>
                   </div>
                 </div>
 
@@ -376,6 +423,9 @@ export default function ContactPage() {
                       <br />
                       San Francisco, CA 94105
                     </p>
+                    <span className="mt-1 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
+                      Placeholder
+                    </span>
                   </div>
                 </div>
 
