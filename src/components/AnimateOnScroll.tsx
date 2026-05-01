@@ -15,6 +15,7 @@ export default function AnimateOnScroll({
   delay = 0,
 }: AnimateOnScrollProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -26,7 +27,7 @@ export default function AnimateOnScroll({
         if (entry.isIntersecting) {
           // Use setTimeout for delay stagger
           if (delay > 0) {
-            setTimeout(() => setIsVisible(true), delay);
+            timeoutRef.current = setTimeout(() => setIsVisible(true), delay);
           } else {
             setIsVisible(true);
           }
@@ -41,7 +42,10 @@ export default function AnimateOnScroll({
     );
 
     observer.observe(node);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
   }, [delay]);
 
   return (

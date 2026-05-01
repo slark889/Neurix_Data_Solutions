@@ -14,7 +14,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/"
-                className="text-sm text-color-body hover:text-color-primary transition-colors"
+                className="text-sm text-color-body hover:text-color-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-color-primary focus-visible:rounded-sm"
               >
                 Home
               </Link>
@@ -22,7 +22,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/services"
-                className="text-sm text-color-body hover:text-color-primary transition-colors"
+                className="text-sm text-color-body hover:text-color-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-color-primary focus-visible:rounded-sm"
               >
                 Services
               </Link>
@@ -30,7 +30,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/about"
-                className="text-sm text-color-body hover:text-color-primary transition-colors"
+                className="text-sm text-color-body hover:text-color-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-color-primary focus-visible:rounded-sm"
               >
                 About
               </Link>
@@ -38,7 +38,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/contact"
-                className="text-sm text-color-body hover:text-color-primary transition-colors"
+                className="text-sm text-color-body hover:text-color-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-color-primary focus-visible:rounded-sm"
               >
                 Contact
               </Link>
@@ -46,7 +46,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/privacy"
-                className="text-sm text-color-body hover:text-color-primary transition-colors"
+                className="text-sm text-color-body hover:text-color-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-color-primary focus-visible:rounded-sm"
               >
                 Privacy Policy
               </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/terms"
-                className="text-sm text-color-body hover:text-color-primary transition-colors"
+                className="text-sm text-color-body hover:text-color-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-color-primary focus-visible:rounded-sm"
               >
                 Terms of Service
               </Link>

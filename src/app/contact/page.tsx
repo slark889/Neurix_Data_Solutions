@@ -122,6 +122,7 @@ export default function ContactPage() {
                 <div className="rounded-xl border border-green-200 bg-green-50 p-8 text-center">
                   <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-green-100">
                     <svg
+                      aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="none"
@@ -284,6 +285,7 @@ export default function ContactPage() {
                     {isSubmitting ? (
                       <>
                         <svg
+                          aria-hidden="true"
                           className="h-5 w-5 animate-spin"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -308,6 +310,7 @@ export default function ContactPage() {
                     ) : (
                       <>
                         <svg
+                          aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
                           fill="none"
@@ -354,6 +357,7 @@ export default function ContactPage() {
                 <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30 hover:-translate-y-1">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-color-primary/10">
                     <svg
+                      aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="none"
@@ -382,6 +386,7 @@ export default function ContactPage() {
                 <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30 hover:-translate-y-1">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-color-primary/10">
                     <svg
+                      aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="none"
@@ -412,6 +417,7 @@ export default function ContactPage() {
                 <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30 hover:-translate-y-1">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-color-primary/10">
                     <svg
+                      aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="none"
@@ -442,6 +448,7 @@ export default function ContactPage() {
                 <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30 hover:-translate-y-1">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-color-primary/10">
                     <svg
+                      aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="none"

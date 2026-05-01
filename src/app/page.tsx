@@ -60,6 +60,7 @@ export default function Home() {
             <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -87,6 +88,7 @@ export default function Home() {
               >
                 Learn more
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -107,6 +109,7 @@ export default function Home() {
             <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -133,6 +136,7 @@ export default function Home() {
               >
                 Learn more
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -153,6 +157,7 @@ export default function Home() {
             <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -177,6 +182,7 @@ export default function Home() {
               >
                 Learn more
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -197,6 +203,7 @@ export default function Home() {
             <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -224,6 +231,7 @@ export default function Home() {
               >
                 Learn more
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -258,6 +266,7 @@ export default function Home() {
             <div className="text-center">
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -284,6 +293,7 @@ export default function Home() {
             <div className="text-center">
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -308,6 +318,7 @@ export default function Home() {
             <div className="text-center">
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"

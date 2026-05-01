@@ -14,6 +14,7 @@ export default function ServicesPage() {
     {
       icon: (
         <svg
+          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
@@ -44,6 +45,7 @@ export default function ServicesPage() {
     {
       icon: (
         <svg
+          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
@@ -73,6 +75,7 @@ export default function ServicesPage() {
     {
       icon: (
         <svg
+          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
@@ -100,6 +103,7 @@ export default function ServicesPage() {
     {
       icon: (
         <svg
+          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
@@ -185,6 +189,7 @@ export default function ServicesPage() {
                       className="flex items-start gap-3 text-sm text-color-body"
                     >
                       <svg
+                        aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"

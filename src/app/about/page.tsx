@@ -67,6 +67,7 @@ export default function AboutPage() {
             <div className="rounded-xl border border-color-primary/20 bg-color-bg p-8 lg:p-10">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -110,6 +111,7 @@ export default function AboutPage() {
             <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -139,6 +141,7 @@ export default function AboutPage() {
             <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -166,6 +169,7 @@ export default function AboutPage() {
             <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -196,6 +200,7 @@ export default function AboutPage() {
             <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -238,6 +243,7 @@ export default function AboutPage() {
             <div className="group text-center transition-transform hover:-translate-y-1">
               <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -268,6 +274,7 @@ export default function AboutPage() {
             <div className="group text-center transition-transform hover:-translate-y-1">
               <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -298,6 +305,7 @@ export default function AboutPage() {
             <div className="group text-center transition-transform hover:-translate-y-1">
               <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -328,6 +336,7 @@ export default function AboutPage() {
             <div className="group text-center transition-transform hover:-translate-y-1">
               <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"

@@ -52,7 +52,7 @@ export default function Navigation() {
               <Link
                 href={link.href}
                 aria-current={isActive ? "page" : undefined}
-                className={`group relative text-sm font-medium uppercase tracking-wider transition-colors ${
+                className={`group relative text-sm font-medium uppercase tracking-wider transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-color-primary focus-visible:rounded-sm ${
                   isActive
                     ? "text-color-primary"
                     : "text-color-body hover:text-color-primary"
@@ -83,7 +83,7 @@ export default function Navigation() {
                 <Link
                   href={link.href}
                   aria-current={isActive ? "page" : undefined}
-                  className={`block px-6 py-4 text-base font-medium transition-colors ${
+                  className={`block px-6 py-4 text-base font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-color-primary focus-visible:rounded-sm ${
                     isActive
                       ? "text-color-primary bg-color-primary/5"
                       : "text-color-body hover:text-color-primary hover:bg-color-primary/5"
