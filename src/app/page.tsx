@@ -57,7 +57,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card 1: Power BI */}
             <AnimateOnScroll delay={0}>
-            <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ export default function Home() {
 
             {/* Card 2: Alteryx */}
             <AnimateOnScroll delay={100}>
-            <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +150,7 @@ export default function Home() {
 
             {/* Card 3: SQL Server */}
             <AnimateOnScroll delay={200}>
-            <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -194,7 +194,7 @@ export default function Home() {
 
             {/* Card 4: Oracle SQL */}
             <AnimateOnScroll delay={300}>
-            <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-color-bg p-6 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

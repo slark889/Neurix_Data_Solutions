@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Services — Power BI, Alteryx, SQL Server & Oracle Automation",
@@ -156,7 +157,7 @@ export default function ServicesPage() {
             {services.map((service, i) => (
               <AnimateOnScroll key={service.title} delay={i * 100}>
               <div
-                className="group rounded-xl border border-color-body/15 bg-color-bg p-8 transition-all hover:border-color-primary/40 hover:shadow-lg"
+                className="group rounded-xl border border-color-body/15 bg-color-bg p-8 transition-all hover:border-color-primary/40 hover:shadow-lg hover:-translate-y-1"
               >
                 {/* Icon */}
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-lg bg-color-primary/10 text-color-primary">

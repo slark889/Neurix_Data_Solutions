@@ -107,7 +107,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Value 1 */}
             <AnimateOnScroll delay={0}>
-            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@ export default function AboutPage() {
 
             {/* Value 2 */}
             <AnimateOnScroll delay={100}>
-            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,7 @@ export default function AboutPage() {
 
             {/* Value 3 */}
             <AnimateOnScroll delay={200}>
-            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +193,7 @@ export default function AboutPage() {
 
             {/* Value 4 */}
             <AnimateOnScroll delay={300}>
-            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md">
+            <div className="group rounded-xl border border-color-body/15 bg-white p-8 transition-all hover:border-color-primary/40 hover:shadow-md hover:-translate-y-1">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-color-primary/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
