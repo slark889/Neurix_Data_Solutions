@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function AboutPage() {
   return (
     <div className="flex flex-col flex-1">
@@ -332,18 +334,18 @@ export default function AboutPage() {
             help. Reach out and discover what Neurix can do for you.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row justify-center">
-            <a
+            <Link
               href="/contact"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-color-primary px-8 text-base font-medium text-white transition-colors hover:opacity-90"
             >
               Get in Touch
-            </a>
-            <a
+            </Link>
+            <Link
               href="/services"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-white/30 px-8 text-base font-medium text-white transition-colors hover:border-color-primary hover:text-color-primary"
             >
               Explore Services
-            </a>
+            </Link>
           </div>
         </div>
       </section>
