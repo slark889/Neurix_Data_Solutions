@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -10,20 +12,20 @@ export default function Footer() {
         <nav aria-label="Footer navigation">
           <ul className="flex items-center gap-6">
             <li>
-              <a
+              <Link
                 href="/privacy"
                 className="text-sm text-color-body hover:text-color-primary transition-colors"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/terms"
                 className="text-sm text-color-body hover:text-color-primary transition-colors"
               >
                 Terms of Service
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

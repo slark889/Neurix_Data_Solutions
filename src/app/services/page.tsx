@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ServicesPage() {
   const services = [
     {
@@ -208,12 +210,12 @@ export default function ServicesPage() {
             >
               Contact Us
             </a>
-            <a
+            <Link
               href="/"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-solid border-color-body px-8 text-base font-medium text-color-body transition-colors hover:border-color-primary hover:text-color-primary"
             >
               Back to Home
-            </a>
+            </Link>
           </div>
         </div>
       </section>
