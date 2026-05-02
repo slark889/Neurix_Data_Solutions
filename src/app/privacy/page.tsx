@@ -15,7 +15,7 @@ export default function PrivacyPage() {
       <section className="bg-color-dark py-20 px-6">
         <div className="mx-auto max-w-3xl text-center">
           {/* Accent Bar */}
-          <div className="mx-auto mb-6 h-2 w-[130px] bg-[#4bc9e8]" />
+          <div className="mx-auto mb-6 h-2 w-[130px] bg-color-accent" />
           <h1 className="mb-4 font-serif text-3xl sm:text-4xl font-semibold text-white">
             Privacy Policy
           </h1>

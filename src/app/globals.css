@@ -5,6 +5,9 @@
   --color-dark: #172e54;
   --color-body: #6b7280;
   --color-bg: #fafcfc;
+  --color-accent: #4bc9e8;
+  --color-gradient-start: #1a5a8a;
+  --color-gradient-end: #0f1f38;
 }
 
 @theme inline {
@@ -12,6 +15,7 @@
   --color-dark: var(--color-dark);
   --color-body: var(--color-body);
   --color-bg: var(--color-bg);
+  --color-accent: var(--color-accent);
   --font-sans: var(--font-montserrat);
   --font-serif: var(--font-roboto-slab);
 }

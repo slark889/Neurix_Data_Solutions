@@ -15,7 +15,7 @@ export default function Home() {
       <section
         className="flex flex-col items-center justify-center"
         style={{
-          background: "radial-gradient(ellipse 80% 60% at 50% -10%, #1a5a8a 0%, #172e54 40%, #0f1f38 100%)",
+          background: "radial-gradient(ellipse 80% 60% at 50% -10%, var(--color-gradient-start) 0%, #172e54 40%, var(--color-gradient-end) 100%)",
         }}
       >
         <div className="flex w-full max-w-3xl flex-col items-center justify-between gap-10 py-20 sm:py-32 px-6 sm:items-start">
