@@ -20,7 +20,7 @@ export default function Home() {
       >
         <div className="flex w-full max-w-3xl flex-col items-center justify-between gap-10 py-20 sm:py-32 px-6 sm:items-start">
           <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-            <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-white font-serif">
+            <h1 className="max-w-sm text-3xl font-semibold leading-10 tracking-tight text-white font-serif">
               Neurix Data Solutions
             </h1>
             <p className="max-w-md text-lg leading-8 text-white/80">
