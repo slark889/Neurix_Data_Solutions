@@ -253,7 +253,7 @@ All verifiable milestones complete. Spec updated to allow CSS-based visual desig
 ---
 
 ## Current Status
-- **Phase**: VERIFICATION (Apollo)
-- **Active Milestone**: M8 — Portfolio page verification in progress
+- **Phase**: VERIFICATION (Apollo) — M8 pending confirmation
+- **Active Milestone**: M8 — Portfolio page verification
 - **Build**: ✅ passes (9 routes) | **Lint**: ✅ zero errors
-- **Portfolio implementation**: Complete — all charts, Alteryx diagram, navigation/footer links, accessibility
+- **Portfolio implementation**: Full — all charts, Alteryx diagram, navigation/footer, accessibility
