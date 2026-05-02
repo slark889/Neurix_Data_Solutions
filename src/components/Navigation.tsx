@@ -78,7 +78,7 @@ export default function Navigation() {
       {/* Hamburger button – mobile only */}
       <button
         type="button"
-        className="md:hidden relative flex flex-col justify-center items-center w-11 h-11 rounded-xl bg-color-primary shadow-md shadow-color-primary/30 hover:bg-color-primary/90 active:scale-95 transition-all duration-200"
+        className="md:hidden relative flex flex-col justify-center items-center w-11 h-11 rounded-xl bg-gradient-to-br from-[var(--color-gradient-start)] to-[var(--color-gradient-end)] text-white shadow-md shadow-black/25 ring-1 ring-white/25 hover:brightness-[1.08] hover:ring-[var(--color-accent)]/55 active:scale-95 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
