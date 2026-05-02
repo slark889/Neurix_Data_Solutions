@@ -12,7 +12,7 @@ export default function Breadcrumbs({ pageName }: BreadcrumbsProps) {
           <li>
             <Link
               href="/"
-              className="hover:text-color-primary transition-colors"
+              className="hover:text-color-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-color-primary focus-visible:rounded-sm"
             >
               Home
             </Link>

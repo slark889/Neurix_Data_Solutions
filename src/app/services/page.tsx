@@ -158,9 +158,12 @@ export default function ServicesPage() {
       <section className="bg-white py-20 px-6">
         <div className="mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {services.map((service, i) => (
+            {services.map((service, i) => {
+              const idMap = ["power-bi", "alteryx", "sql-server", "oracle-sql"];
+              return (
               <AnimateOnScroll key={service.title} delay={i * 100}>
               <div
+                id={idMap[i]}
                 className="group rounded-xl border border-color-body/15 bg-color-bg p-8 transition-all hover:border-color-primary/40 hover:shadow-lg hover:-translate-y-1"
               >
                 {/* Icon */}
@@ -207,7 +210,7 @@ export default function ServicesPage() {
                 </ul>
               </div>
               </AnimateOnScroll>
-            ))}
+            );})}
           </div>
         </div>
       </section>
