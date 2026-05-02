@@ -119,6 +119,7 @@ export default function ContactPage() {
 
               {submitted ? (
                 /* Success Message */
+                <div aria-live="polite" aria-atomic="true">
                 <div className="rounded-xl border border-green-200 bg-green-50 p-8 text-center">
                   <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-green-100">
                     <svg
@@ -158,9 +159,10 @@ export default function ContactPage() {
                     Send Another Message
                   </button>
                 </div>
+                </div>
               ) : (
                 /* Form */
-                <form onSubmit={handleSubmit} noValidate className="space-y-5">
+                <form onSubmit={handleSubmit} noValidate aria-live="polite" className="space-y-5">
                   {/* Name */}
                   <div>
                     <label
