@@ -29,6 +29,14 @@ export default function Footer() {
             </li>
             <li>
               <Link
+                href="/portfolio"
+                className="text-sm text-color-body hover:text-color-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-color-primary focus-visible:rounded-sm"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/about"
                 className="text-sm text-color-body hover:text-color-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-color-primary focus-visible:rounded-sm"
               >
