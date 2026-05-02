@@ -43,8 +43,8 @@ export default function AnimateOnScroll({
 
     observer.observe(node);
     return () => {
-      observer.disconnect();
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      observer.disconnect();
     };
   }, [delay]);
 

@@ -131,6 +131,39 @@ export default function ServicesPage() {
         "Backup, recovery, and security hardening",
       ],
     },
+    {
+      icon: (
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          className="h-8 w-8"
+        >
+          <rect x="2" y="7" width="6" height="10" rx="1" />
+          <rect x="9" y="4" width="6" height="13" rx="1" />
+          <rect x="16" y="9" width="6" height="8" rx="1" />
+          <path d="M5 7V5a1 1 0 011-1h2" strokeLinecap="round" />
+          <path d="M12 4V2a1 1 0 011-1h2" strokeLinecap="round" />
+          <path d="M5 17v2" strokeLinecap="round" />
+          <path d="M12 17v3" strokeLinecap="round" />
+          <path d="M19 17v2" strokeLinecap="round" />
+        </svg>
+      ),
+      title: "RPA & Process Automation",
+      description:
+        "Design and deliver end-to-end integrated automation solutions using Power Automate and UiPath. We map your existing workflows, identify automation opportunities, and build robust bots that connect your entire technology stack — from legacy systems to modern cloud platforms — eliminating repetitive manual tasks at scale.",
+      features: [
+        "End-to-end workflow design and automation blueprinting",
+        "Power Automate cloud & desktop flows across Microsoft 365",
+        "UiPath attended and unattended bot development",
+        "Cross-system integration (ERP, CRM, databases, APIs)",
+        "Exception handling, logging, and audit trail setup",
+        "Ongoing monitoring, maintenance, and optimisation",
+      ],
+    },
   ];
 
   return (
@@ -159,22 +192,37 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {services.map((service, i) => {
-              const idMap = ["power-bi", "alteryx", "sql-server", "oracle-sql"];
+              const idMap = ["power-bi", "alteryx", "sql-server", "oracle-sql", "rpa"];
+              const isRpa = i === 4;
               return (
-              <AnimateOnScroll key={service.title} delay={i * 100}>
+              <AnimateOnScroll key={service.title} delay={i * 100} className={isRpa ? "lg:col-span-2" : ""}>
               <div
                 id={idMap[i]}
-                className="group rounded-xl border border-color-body/15 bg-color-bg p-8 transition-all hover:border-color-primary/40 hover:shadow-lg hover:-translate-y-1"
+                className={`group rounded-xl border bg-color-bg p-8 transition-all hover:shadow-lg hover:-translate-y-1 ${
+                  isRpa
+                    ? "border-color-primary/30 bg-gradient-to-br from-color-primary/5 to-color-accent/5 hover:border-color-primary/60"
+                    : "border-color-body/15 hover:border-color-primary/40"
+                }`}
               >
                 {/* Icon */}
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-lg bg-color-primary/10 text-color-primary">
+                <div className={`mb-5 flex h-14 w-14 items-center justify-center rounded-lg text-color-primary ${isRpa ? "bg-color-primary/15" : "bg-color-primary/10"}`}>
                   {service.icon}
                 </div>
 
                 {/* Title */}
-                <h2 className="mb-3 font-serif text-xl sm:text-2xl font-semibold text-color-dark">
+                <h2 className="mb-1 font-serif text-xl sm:text-2xl font-semibold text-color-dark flex flex-wrap items-center gap-3">
                   {service.title}
+                  {isRpa && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-color-primary px-3 py-0.5 text-xs font-semibold text-white uppercase tracking-wide">
+                      End-to-End Integration
+                    </span>
+                  )}
                 </h2>
+                {isRpa && (
+                  <p className="mb-3 text-xs font-medium text-color-primary/80 uppercase tracking-wider">
+                    Power Automate · UiPath RPA
+                  </p>
+                )}
 
                 {/* Description */}
                 <p className="mb-6 text-sm sm:text-base text-color-body leading-relaxed">
@@ -185,7 +233,7 @@ export default function ServicesPage() {
                 <h3 className="mb-3 font-serif text-base font-semibold text-color-dark">
                   Key Features
                 </h3>
-                <ul className="space-y-2">
+                <ul className={`space-y-2 ${isRpa ? "sm:grid sm:grid-cols-2 sm:gap-x-8 sm:space-y-0 sm:gap-y-2" : ""}`}>
                   {service.features.map((feature) => (
                     <li
                       key={feature}

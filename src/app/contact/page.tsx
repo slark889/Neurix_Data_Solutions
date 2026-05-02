@@ -379,10 +379,10 @@ export default function ContactPage() {
                       Email
                     </h3>
                     <a
-                      href="mailto:hello@neurixdata.com"
+                      href="mailto:info@neurixdata.com.au"
                       className="text-sm text-color-body hover:text-color-primary transition-colors"
                     >
-                      hello@neurixdata.com
+                      info@neurixdata.com.au
                     </a>
                   </div>
                 </div>
@@ -407,45 +407,11 @@ export default function ContactPage() {
                       Phone
                     </h3>
                     <a
-                      href="tel:+15551234567"
+                      href="tel:+61423581929"
                       className="text-sm text-color-body hover:text-color-primary transition-colors"
                     >
-                      +1 (555) 123-4567
+                      0423 581 929
                     </a>
-                    <span className="ml-1.5 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
-                      Placeholder
-                    </span>
-                  </div>
-                </div>
-
-                {/* Address */}
-                <div className="group flex items-start gap-4 rounded-lg border border-color-body/15 bg-color-bg p-5 transition-all hover:border-color-primary/30 hover:-translate-y-1">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-color-primary/10">
-                    <svg
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      className="h-5 w-5 text-color-primary"
-                    >
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="mb-1 font-serif text-base font-semibold text-color-dark">
-                      Office
-                    </h3>
-                    <p className="text-sm text-color-body leading-relaxed">
-                      451 Data Drive, Suite 200
-                      <br />
-                      San Francisco, CA 94105
-                    </p>
-                    <span className="mt-1 inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-px text-[10px] font-medium uppercase text-amber-700">
-                      Placeholder
-                    </span>
                   </div>
                 </div>
 

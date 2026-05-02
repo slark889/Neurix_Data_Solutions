@@ -66,6 +66,7 @@ export default function Home() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
+                  
                   className="h-6 w-6 text-color-primary"
                 >
                   <rect x="3" y="3" width="7" height="7" rx="1" />
@@ -92,6 +93,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
+                  
                   className="h-4 w-4"
                 >
                   <path
@@ -115,6 +117,7 @@ export default function Home() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
+                  
                   className="h-6 w-6 text-color-primary"
                 >
                   <path d="M4 20L10 4L14 16L20 8" />
@@ -140,6 +143,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
+                  
                   className="h-4 w-4"
                 >
                   <path
@@ -163,6 +167,7 @@ export default function Home() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
+                  
                   className="h-6 w-6 text-color-primary"
                 >
                   <ellipse cx="12" cy="5" rx="9" ry="3" />
@@ -186,6 +191,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
+                  
                   className="h-4 w-4"
                 >
                   <path
@@ -209,6 +215,7 @@ export default function Home() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
+                  
                   className="h-6 w-6 text-color-primary"
                 >
                   <circle cx="12" cy="12" r="9" />
@@ -235,6 +242,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
+                  
                   className="h-4 w-4"
                 >
                   <path
@@ -293,7 +301,7 @@ export default function Home() {
             <div className="text-center">
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-color-primary/10">
                 <svg
-                  aria-hidden="true"
+                  
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
