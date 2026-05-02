@@ -248,13 +248,13 @@ All verifiable milestones complete. Spec updated to allow CSS-based visual desig
 - **M5**: ✅ COMPLETE — All 7 bug fixes & accessibility items (memory leak, console guard, tel: links, aria-hidden SVGs, focus-visible, placeholder badges, favicon.ico cleanup). Verified by Apollo.
 - **M6**: ✅ COMPLETE — Primary color contrast fix (#157a9e), contact form demo disclosure, about import formatting, spec typo fix. Build + lint pass.
 - **M7**: ✅ COMPLETE — All 7 code quality items (extract hardcoded colors, button hover fix, h1 responsive, service deep-links, Breadcrumbs focus-visible, aria-live on contact form). Verified by Apollo.
-- **M8**: 🔄 IN PROGRESS — Portfolio page with Power BI charts and Alteryx workflow diagram. Human enhancement request (Issue #67).
+- **M8**: ✅ COMPLETE — Portfolio page with Power BI charts and Alteryx workflow diagram. Human enhancement request (Issue #67). Verified by Apollo.
 
 ---
 
 ## Current Status
-- **Phase**: PLANNING (Athena)
-- **Active Milestone**: M8 — Portfolio / Examples Page ✅ COMPLETE
+- **Phase**: VERIFICATION (Apollo)
+- **Active Milestone**: M8 — Portfolio / Examples Page ready for verification
 - **Build**: ✅ passes | **Lint**: ✅ zero errors
 - **Portfolio implementation**: All charts, Alteryx diagram, navigation/footer links, accessibility tables
-- **Next**: Transition to Apollo for verification
+- **Next**: Apollo verification
