@@ -153,18 +153,39 @@ Fix all issues found in Athena's second independent audit (Elara + Nico, cycle 1
 
 **Verified by Apollo**: All 7 items PASS. Build and lint clean.
 
-### M6: Final Polish — Contrast Fix & Remaining Issues (NEXT)
+### M6: Final Polish — Contrast Fix & Remaining Issues ✅ COMPLETE
 Fix the one remaining CRITICAL issue and several LOW-priority polish items found in the independent content audit.
 
 **CRITICAL — Accessibility:**
-1. Fix primary color contrast: `#1a8ab8` fails WCAG AA for normal text on `#fafcfc` (3.87:1, needs ≥4.5:1). Darken `--color-primary` from `#1a8ab8` to `#157a9e` in globals.css. This affects "Learn more" links, contact info links, and any `text-sm` or `text-base` text using the primary color.
+1. Fix primary color contrast: `#1a8ab8` fails WCAG AA for normal text on `#fafcfc` (3.87:1, needs ≥4.5:1). Darken `--color-primary` from `#1a8ab8` to `#157a9e` in globals.css. This affects "Learn more" links, contact info links, and any `text-sm` or `text-base` text using the primary color. ✅
 
 **LOW — UX Polish:**
-2. Add demo notice to contact form success state — users currently see "Thank you for reaching out" with no indication the message wasn't actually sent. Add a subtle "(This is a demo — no message was sent.)" note to the success view.
-3. Clean up blank line inconsistency in about/page.tsx imports (between Breadcrumbs and AnimateOnScroll imports)
+2. Add demo notice to contact form success state — users currently see "Thank you for reaching out" with no indication the message wasn't actually sent. Add a subtle "(This is a demo — no message was sent.)" note to the success view. ✅
+3. Clean up blank line inconsistency in about/page.tsx imports (between Breadcrumbs and AnimateOnScroll imports) ✅
 
 **INFO — Spec Fix:**
-4. Fix typo in spec.md: "Power Bi dashboard" → "Power BI dashboard"
+4. Fix typo in spec.md: "Power Bi dashboard" → "Power BI dashboard" ✅
+
+**Requirements:**
+- `npm run build` succeeds with zero errors ✅
+- `npm run lint` passes with zero errors ✅
+- All code in `/repo/` directory ✅
+
+### M7: Code Quality Cleanup & Remaining Polish (NEXT)
+Fix all actionable issues found in Athena's third independent audit (Elara + Nico, cycle 166).
+
+**Code Quality — Extract hardcoded colors:**
+1. Extract `#4bc9e8` accent bar color to `--color-accent` CSS custom property (5 files: about, contact, privacy, services, terms)
+2. Extract gradient colors `#1a5a8a` and `#0f1f38` from Home hero to CSS custom properties (`--color-gradient-start`, `--color-gradient-end`)
+
+**UX — Navigation & Responsive:**
+3. Fix global button `:hover` rule in globals.css — exclude hamburger button and BackToTop button from scale effect (they have their own hover styles)
+4. Relax Home h1 `max-w-xs` to `max-w-sm` for better mobile rendering
+5. Add `id` attributes to service sections on `/services` page so home page "Learn more" links can deep-link (e.g., `/services#power-bi`)
+
+**Accessibility:**
+6. Add `focus-visible` outline styles to Breadcrumbs component links
+7. Add `aria-live="polite"` region to contact form for screen reader announcement of validation errors and success
 
 **Requirements:**
 - `npm run build` succeeds with zero errors
@@ -183,11 +204,13 @@ Fix the one remaining CRITICAL issue and several LOW-priority polish items found
 - **M3**: ✅ COMPLETE — All 18 quality/accessibility/polish items fixed. Verified by Apollo.
 - **M4**: ✅ COMPLETE — All 12 visual polish items (nav underline, header shrink, breadcrumbs, accent bar, back-to-top, hero gradient, entrance animations, button scale, card lift, SVG favicon, robots.txt, sitemap.xml). Verified by Apollo.
 - **M5**: ✅ COMPLETE — All 7 bug fixes & accessibility items (memory leak, console guard, tel: links, aria-hidden SVGs, focus-visible, placeholder badges, favicon.ico cleanup). Verified by Apollo.
+- **M6**: ✅ COMPLETE — Primary color contrast fix (#157a9e), contact form demo disclosure, about import formatting, spec typo fix. Build + lint pass.
+- **M7**: Defined — Code quality cleanup: extract hardcoded colors, fix button hover, h1 responsive, service deep-links, a11y gaps.
 
 ---
 
 ## Current Status
 - **Phase**: PLANNING (Athena)
-- **M6 defined**: Final contrast fix + remaining polish
+- **M7 defined**: Code quality cleanup & remaining polish (7 items)
 - **Blocked**: M2.5.2 minimax image generation (awaiting API key from human)
 - **Node.js**: v24.14.1 | **npm**: 11.11.0 | **Next.js**: 16.2.4
