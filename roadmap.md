@@ -171,7 +171,7 @@ Fix the one remaining CRITICAL issue and several LOW-priority polish items found
 - `npm run lint` passes with zero errors ✅
 - All code in `/repo/` directory ✅
 
-### M7: Code Quality Cleanup & Remaining Polish (NEXT)
+### M7: Code Quality Cleanup & Remaining Polish ✅ COMPLETE
 Fix all actionable issues found in Athena's third independent audit (Elara + Nico, cycle 166).
 
 **Code Quality — Extract hardcoded colors:**
@@ -205,12 +205,12 @@ Fix all actionable issues found in Athena's third independent audit (Elara + Nic
 - **M4**: ✅ COMPLETE — All 12 visual polish items (nav underline, header shrink, breadcrumbs, accent bar, back-to-top, hero gradient, entrance animations, button scale, card lift, SVG favicon, robots.txt, sitemap.xml). Verified by Apollo.
 - **M5**: ✅ COMPLETE — All 7 bug fixes & accessibility items (memory leak, console guard, tel: links, aria-hidden SVGs, focus-visible, placeholder badges, favicon.ico cleanup). Verified by Apollo.
 - **M6**: ✅ COMPLETE — Primary color contrast fix (#157a9e), contact form demo disclosure, about import formatting, spec typo fix. Build + lint pass.
-- **M7**: Defined — Code quality cleanup: extract hardcoded colors, fix button hover, h1 responsive, service deep-links, a11y gaps.
+- **M7**: ✅ COMPLETE — All 7 code quality items (extract hardcoded colors, button hover fix, h1 responsive, service deep-links, Breadcrumbs focus-visible, aria-live on contact form). Verified by Apollo.
 
 ---
 
 ## Current Status
 - **Phase**: PLANNING (Athena)
-- **M7 defined**: Code quality cleanup & remaining polish (7 items)
-- **Blocked**: M2.5.2 minimax image generation (awaiting API key from human)
-- **Node.js**: v24.14.1 | **npm**: 11.11.0 | **Next.js**: 16.2.4
+- **All verifiable milestones complete** — M1 through M7 all verified by Apollo
+- **Build**: ✅ passes | **Lint**: ✅ zero errors
+- **M2.5.2 minimax images**: ⛔ BLOCKED — awaiting minimax API key from human (external dependency)
