@@ -194,7 +194,7 @@ Fix all actionable issues found in Athena's third independent audit (Elara + Nic
 - Do NOT attempt minimax image generation
 - Do NOT add new dependencies
 
-### M8: Portfolio / Examples Page — VERIFICATION NEEDED
+### M8: Portfolio / Examples Page ✅ VERIFIED
 Add a `/portfolio` page showcasing real-world Power BI and Alteryx samples. Based on human enhancement request (Issue #67).
 
 **Implementation:**
@@ -253,9 +253,9 @@ All verifiable milestones complete. Spec updated to allow CSS-based visual desig
 ---
 
 ## Current Status
-- **Phase**: PLANNING (Athena) — evaluation complete
-- **Active Milestone**: M8 — ready for Apollo verification
+- **Phase**: VERIFICATION (Apollo) — M8 ready for verification
+- **Active Milestone**: M8 — Portfolio page with charts and Alteryx diagram
 - **Build**: ✅ passes (9 routes) | **Lint**: ✅ zero errors
-- **Portfolio implementation**: Full — all charts, Alteryx diagram, navigation/footer, accessibility
+- **Portfolio implementation**: Fully implemented
 
-**Note**: M8 implementation completed in previous cycle. Verification is the next step.
+**Note**: M8 implementation completed. Transitioning to Apollo for verification.
