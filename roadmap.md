@@ -194,7 +194,40 @@ Fix all actionable issues found in Athena's third independent audit (Elara + Nic
 - Do NOT attempt minimax image generation
 - Do NOT add new dependencies
 
-### M8: Project Completion ✅ READY
+### M8: Portfolio / Examples Page (NEW)
+Add a `/portfolio` page showcasing real-world Power BI and Alteryx samples. Based on human enhancement request (Issue #67).
+
+**Section 1 — Power BI Sample Visuals (Recharts):**
+1. Bar chart — Monthly revenue by category (Jan–Jun 2025, 4 categories: Electronics $142k, Software $98k, Services $87k, Hardware $64k)
+2. Line chart — Weekly KPI target (100 units) vs actual (varies ±15%)
+3. Donut chart — Budget allocation (Operations 35%, Marketing 25%, R&D 20%, HR 20%)
+4. KPI cards — Total Revenue, YoY Growth %, Avg Deal Size
+5. Each visual has a short caption explaining the business problem
+
+**Section 2 — Alteryx Workflow Diagram:**
+6. SVG/component-based flow diagram: Input → Cleanse → Join → Aggregate → Output
+7. Use case caption: "Reconciling sales data from two CRM systems into a unified weekly report"
+
+**Page Structure:**
+8. Hero — "See Our Work in Action"
+9. Section: Power BI Dashboard Examples (2-col chart grid with captions)
+10. Section: Alteryx Workflow Automation (diagram + description)
+11. CTA — "Want a custom solution? Contact us"
+
+**Navigation:**
+12. Add "Portfolio" to navLinks in Navigation.tsx (desktop + mobile)
+13. Add "Portfolio" link to Footer
+
+**Acceptance Criteria:**
+- Renders correctly on mobile and desktop
+- All data is fictional and clearly labelled as sample
+- Charts are accessible (aria-labels or accompanying data table)
+- `next build` passes TypeScript check with no errors
+- "Portfolio" link appears in nav and footer
+
+**Dependencies:** Install `recharts` package (React-native charting library)
+
+### M9: Project Completion ✅ READY
 All verifiable milestones complete. Spec updated to allow CSS-based visual design as primary approach.
 
 **Status:**
@@ -215,12 +248,13 @@ All verifiable milestones complete. Spec updated to allow CSS-based visual desig
 - **M5**: ✅ COMPLETE — All 7 bug fixes & accessibility items (memory leak, console guard, tel: links, aria-hidden SVGs, focus-visible, placeholder badges, favicon.ico cleanup). Verified by Apollo.
 - **M6**: ✅ COMPLETE — Primary color contrast fix (#157a9e), contact form demo disclosure, about import formatting, spec typo fix. Build + lint pass.
 - **M7**: ✅ COMPLETE — All 7 code quality items (extract hardcoded colors, button hover fix, h1 responsive, service deep-links, Breadcrumbs focus-visible, aria-live on contact form). Verified by Apollo.
+- **M8**: 🔄 IN PROGRESS — Portfolio page with Power BI charts and Alteryx workflow diagram. Human enhancement request (Issue #67).
 
 ---
 
 ## Current Status
 - **Phase**: PLANNING (Athena)
-- **All milestones complete** — M1-M7 all verified by Apollo
+- **Active Milestone**: M8 — Portfolio / Examples Page
 - **Build**: ✅ passes | **Lint**: ✅ zero errors
-- **Spec updated**: CSS-based visual design is primary approach
-- **Ready for**: Deployment
+- **Spec updated**: Portfolio page requirement added (Issue #67)
+- **Next**: Hand off M8 to Ares for implementation
